@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       headers: {
         'Content-Type': 'application/json',
         // 这里的 key 稍后在 Vercel 后台配置，千万别写死在前端！
-        'Authorization': `Bearer ${process.env.API_KEY}`
+        'Authorization': `Bearer ${process.env.api_key}`
       },
       body: JSON.stringify({
         model: 'Qwen/Qwen2.5-7B-Instruct', // 模型名字按你注册的平台填  
